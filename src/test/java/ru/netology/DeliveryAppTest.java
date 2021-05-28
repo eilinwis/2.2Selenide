@@ -19,7 +19,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Петр Старков");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
         form.$("[data-test-id=agreement]").click();
@@ -32,7 +32,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Владимир Мирный Смирный");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
         form.$("[data-test-id=agreement]").click();
@@ -45,7 +45,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Владимир Мирный-Смирный");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
         form.$("[data-test-id=agreement]").click();
@@ -58,7 +58,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Petya Stark");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
         form.$("[data-test-id=agreement]").click();
@@ -71,7 +71,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Владимир Мирный");
         form.$("[data-test-id=phone] input").setValue("+7927000000");
         form.$("[data-test-id=agreement]").click();
@@ -84,7 +84,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Владимир Мирный");
         form.$("[data-test-id=phone] input").setValue("+792700000000");
         form.$("[data-test-id=agreement]").click();
@@ -97,7 +97,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Владимир Мирный");
         form.$("[data-test-id=phone] input").setValue("89110000000");
         form.$("[data-test-id=agreement]").click();
@@ -110,7 +110,7 @@ public class DeliveryAppTest {
         open("http://localhost:9999");
         SelenideElement form = $("[class=\"form form_size_m form_theme_alfa-on-white\"]");
         form.$("[data-test-id=city] input").setValue(cities.getRandomCity());
-        form.$("[data-test-id=date] input").setValue(dateMethod.seeCurrentDate());
+        form.$("[data-test-id=date] input").setValue(dateMethod.deliveryDate());
         form.$("[data-test-id=name] input").setValue("Владимир Мирный-Смирный");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
         form.$(withText("Забронировать")).click();

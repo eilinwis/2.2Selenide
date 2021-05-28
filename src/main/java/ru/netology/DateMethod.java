@@ -1,17 +1,19 @@
 package ru.netology;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class DateMethod {
 
-    public String seeCurrentDate() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+    public String deliveryDate() {
 
-        LocalDate date = LocalDate.now();
-        String text = date.format(formatter);
-
-        return text;
+        Date date = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.DAY_OF_YEAR, 3);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        return simpleDateFormat.format(calendar.getTime());
     }
 }
-
